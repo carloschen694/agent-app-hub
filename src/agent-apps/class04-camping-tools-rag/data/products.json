@@ -1,0 +1,1913 @@
+{
+  "schema_version": 5,
+  "products": [
+    {
+      "id": "UT001",
+      "source_id": "UT001",
+      "source_category": "輕量化帳篷",
+      "name": "藍山PRO2 輕量雙人帳",
+      "brand": "三峰出",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 490,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 910,
+        "tent_capacity_persons": 2,
+        "tent_structure": "非自立帳(需2支登山杖)",
+        "tent_required_trekking_pole_count": 2
+      },
+      "source": {
+        "row_number": 3
+      },
+      "search": {
+        "normalized_text": "2 910 ut001 三峰出 已上架 藍山pro2 藍山pro2 輕量雙人帳 輕量化帳篷 輕量雙人帳 需2支登山杖 非自立帳 非自立帳 需2支登山杖",
+        "tokens": [
+          "2",
+          "910",
+          "ut001",
+          "三峰出",
+          "已上架",
+          "藍山pro2",
+          "藍山pro2 輕量雙人帳",
+          "輕量化帳篷",
+          "輕量雙人帳",
+          "需2支登山杖",
+          "非自立帳",
+          "非自立帳 需2支登山杖"
+        ]
+      }
+    },
+    {
+      "id": "UT002",
+      "source_id": "UT002",
+      "source_category": "輕量化帳篷",
+      "name": "藍山PRO1 輕量單人帳",
+      "brand": "三峰出",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 450,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-24",
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 690,
+        "tent_capacity_persons": 1,
+        "tent_structure": "非自立帳(需1支登山杖)",
+        "tent_required_trekking_pole_count": 1
+      },
+      "source": {
+        "row_number": 4
+      },
+      "search": {
+        "normalized_text": "1 2026-07-24 690 ut002 三峰出 已上架 藍山pro1 藍山pro1 輕量單人帳 輕量化帳篷 輕量單人帳 需1支登山杖 非自立帳 非自立帳 需1支登山杖",
+        "tokens": [
+          "1",
+          "2026-07-24",
+          "690",
+          "ut002",
+          "三峰出",
+          "已上架",
+          "藍山pro1",
+          "藍山pro1 輕量單人帳",
+          "輕量化帳篷",
+          "輕量單人帳",
+          "需1支登山杖",
+          "非自立帳",
+          "非自立帳 需1支登山杖"
+        ]
+      }
+    },
+    {
+      "id": "UT003",
+      "source_id": "UT003",
+      "source_category": "輕量化帳篷",
+      "name": "The Two 輕量雙人帳",
+      "brand": "Gossamer Gear",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 990,
+        "extra_day": 150,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-24",
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 667,
+        "tent_capacity_persons": 2,
+        "tent_structure": "非自立帳(需2支登山杖)",
+        "tent_required_trekking_pole_count": 2
+      },
+      "source": {
+        "row_number": 5
+      },
+      "search": {
+        "normalized_text": "2 2026-07-24 667 gear gossamer gossamer gear the the two 輕量雙人帳 two ut003 已上架 輕量化帳篷 輕量雙人帳 需2支登山杖 非自立帳 非自立帳 需2支登山杖",
+        "tokens": [
+          "2",
+          "2026-07-24",
+          "667",
+          "gear",
+          "gossamer",
+          "gossamer gear",
+          "the",
+          "the two 輕量雙人帳",
+          "two",
+          "ut003",
+          "已上架",
+          "輕量化帳篷",
+          "輕量雙人帳",
+          "需2支登山杖",
+          "非自立帳",
+          "非自立帳 需2支登山杖"
+        ]
+      }
+    },
+    {
+      "id": "UT004",
+      "source_id": "UT004",
+      "source_category": "輕量化帳篷",
+      "name": "The One 輕量單人帳",
+      "brand": "Gossamer Gear",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 790,
+        "extra_day": 150,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-19",
+        "reservation": "7/20 2天 郭小姐"
+      },
+      "specs": {
+        "weight_g": 503,
+        "tent_capacity_persons": 1,
+        "tent_structure": "非自立帳(需2支登山杖)",
+        "tent_required_trekking_pole_count": 2
+      },
+      "source": {
+        "row_number": 6
+      },
+      "search": {
+        "normalized_text": "1 2 20 2026-07-19 2天 503 7 7 20 2天 郭小姐 gear gossamer gossamer gear one the the one 輕量單人帳 ut004 已上架 輕量化帳篷 輕量單人帳 郭小姐 需2支登山杖 非自立帳 非自立帳 需2支登山杖",
+        "tokens": [
+          "1",
+          "2",
+          "20",
+          "2026-07-19",
+          "2天",
+          "503",
+          "7",
+          "7 20 2天 郭小姐",
+          "gear",
+          "gossamer",
+          "gossamer gear",
+          "one",
+          "the",
+          "the one 輕量單人帳",
+          "ut004",
+          "已上架",
+          "輕量化帳篷",
+          "輕量單人帳",
+          "郭小姐",
+          "需2支登山杖",
+          "非自立帳",
+          "非自立帳 需2支登山杖"
+        ]
+      }
+    },
+    {
+      "id": "UT005",
+      "source_id": "UT005",
+      "source_category": "輕量化帳篷",
+      "name": "Double Rainbow 輕量雙人帳",
+      "brand": "Tarptent",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 990,
+        "extra_day": 150,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 1017,
+        "tent_capacity_persons": 2,
+        "tent_structure": "半自立帳"
+      },
+      "source": {
+        "row_number": 7
+      },
+      "search": {
+        "normalized_text": "1017 2 double double rainbow 輕量雙人帳 rainbow tarptent ut005 半自立帳 已上架 輕量化帳篷 輕量雙人帳",
+        "tokens": [
+          "1017",
+          "2",
+          "double",
+          "double rainbow 輕量雙人帳",
+          "rainbow",
+          "tarptent",
+          "ut005",
+          "半自立帳",
+          "已上架",
+          "輕量化帳篷",
+          "輕量雙人帳"
+        ]
+      }
+    },
+    {
+      "id": "UT006",
+      "source_id": "UT006",
+      "source_category": "輕量化帳篷",
+      "name": "X-Mid 2 輕量雙人帳",
+      "brand": "Durston Gear",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 990,
+        "extra_day": 150,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 1005,
+        "tent_capacity_persons": 2,
+        "tent_structure": "非自立帳(需2支登山杖)",
+        "tent_required_trekking_pole_count": 2
+      },
+      "source": {
+        "row_number": 8
+      },
+      "search": {
+        "normalized_text": "1005 2 durston durston gear gear ut006 x-mid x-mid 2 輕量雙人帳 已上架 輕量化帳篷 輕量雙人帳 需2支登山杖 非自立帳 非自立帳 需2支登山杖",
+        "tokens": [
+          "1005",
+          "2",
+          "durston",
+          "durston gear",
+          "gear",
+          "ut006",
+          "x-mid",
+          "x-mid 2 輕量雙人帳",
+          "已上架",
+          "輕量化帳篷",
+          "輕量雙人帳",
+          "需2支登山杖",
+          "非自立帳",
+          "非自立帳 需2支登山杖"
+        ]
+      }
+    },
+    {
+      "id": "UT007",
+      "source_id": "UT007",
+      "source_category": "輕量化帳篷",
+      "name": "10D 超輕版雙人帳",
+      "brand": "Naturehike",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 490,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "未到貨",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 930,
+        "tent_capacity_persons": 2,
+        "tent_structure": "自立帳"
+      },
+      "source": {
+        "row_number": 9
+      },
+      "search": {
+        "normalized_text": "10d 10d 超輕版雙人帳 2 930 naturehike ut007 未到貨 自立帳 超輕版雙人帳 輕量化帳篷",
+        "tokens": [
+          "10d",
+          "10d 超輕版雙人帳",
+          "2",
+          "930",
+          "naturehike",
+          "ut007",
+          "未到貨",
+          "自立帳",
+          "超輕版雙人帳",
+          "輕量化帳篷"
+        ]
+      }
+    },
+    {
+      "id": "UB001",
+      "source_id": "UB001",
+      "source_category": "輕量化背包",
+      "name": "In and out 22L 攻頂包",
+      "brand": "神秘農場",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 180,
+        "extra_day": 50,
+        "deposit": 500
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 400,
+        "backpack_capacity_l": {
+          "value": 22
+        }
+      },
+      "source": {
+        "row_number": 10
+      },
+      "search": {
+        "normalized_text": "22 22l 400 and in in and out 22l 攻頂包 out ub001 已上架 攻頂包 神秘農場 輕量化背包",
+        "tokens": [
+          "22",
+          "22l",
+          "400",
+          "and",
+          "in",
+          "in and out 22l 攻頂包",
+          "out",
+          "ub001",
+          "已上架",
+          "攻頂包",
+          "神秘農場",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB002",
+      "source_id": "UB002",
+      "source_category": "輕量化背包",
+      "name": "In and out 19L 攻頂包",
+      "brand": "神秘農場",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 180,
+        "extra_day": 50,
+        "deposit": 500
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 400,
+        "backpack_capacity_l": {
+          "value": 19
+        }
+      },
+      "source": {
+        "row_number": 11
+      },
+      "search": {
+        "normalized_text": "19 19l 400 and in in and out 19l 攻頂包 out ub002 已上架 攻頂包 神秘農場 輕量化背包",
+        "tokens": [
+          "19",
+          "19l",
+          "400",
+          "and",
+          "in",
+          "in and out 19l 攻頂包",
+          "out",
+          "ub002",
+          "已上架",
+          "攻頂包",
+          "神秘農場",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB003",
+      "source_id": "UB003",
+      "source_category": "輕量化背包",
+      "name": "Minimalist 19L 攻頂包",
+      "brand": "Gossamer Gear",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 180,
+        "extra_day": 50,
+        "deposit": 500
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 331,
+        "backpack_capacity_l": {
+          "value": 19
+        },
+        "backpack_max_load_kg": 9
+      },
+      "source": {
+        "row_number": 12
+      },
+      "search": {
+        "normalized_text": "19 19l 331 9 gear gossamer gossamer gear minimalist minimalist 19l 攻頂包 ub003 已上架 攻頂包 輕量化背包",
+        "tokens": [
+          "19",
+          "19l",
+          "331",
+          "9",
+          "gear",
+          "gossamer",
+          "gossamer gear",
+          "minimalist",
+          "minimalist 19l 攻頂包",
+          "ub003",
+          "已上架",
+          "攻頂包",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB004",
+      "source_id": "UB004",
+      "source_category": "輕量化背包",
+      "name": "XA-25 野跑包 (M/L)",
+      "brand": "Salomon",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 390,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 443,
+        "backpack_capacity_l": {
+          "value": 25
+        },
+        "backpack_back_length_cm": {
+          "min": 48,
+          "max": 54
+        }
+      },
+      "source": {
+        "row_number": 13
+      },
+      "search": {
+        "normalized_text": "25 443 48 54 l m salomon ub004 xa-25 xa-25 野跑包 m l 已上架 輕量化背包 野跑包",
+        "tokens": [
+          "25",
+          "443",
+          "48",
+          "54",
+          "l",
+          "m",
+          "salomon",
+          "ub004",
+          "xa-25",
+          "xa-25 野跑包 m l",
+          "已上架",
+          "輕量化背包",
+          "野跑包"
+        ]
+      }
+    },
+    {
+      "id": "UB005",
+      "source_id": "UB005",
+      "source_category": "輕量化背包",
+      "name": "PUMICE 極輕量 登山背包 37L 黑",
+      "brand": "Hanchor",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 350,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-19",
+        "reservation": "7/20 2天 郭小姐"
+      },
+      "specs": {
+        "weight_g": 378,
+        "backpack_capacity_l": {
+          "value": 37
+        },
+        "backpack_max_load_kg": 8
+      },
+      "source": {
+        "row_number": 14
+      },
+      "search": {
+        "normalized_text": "20 2026-07-19 2天 37 378 37l 7 7 20 2天 郭小姐 8 hanchor pumice pumice 極輕量 登山背包 37l 黑 ub005 已上架 極輕量 登山背包 輕量化背包 郭小姐 黑",
+        "tokens": [
+          "20",
+          "2026-07-19",
+          "2天",
+          "37",
+          "378",
+          "37l",
+          "7",
+          "7 20 2天 郭小姐",
+          "8",
+          "hanchor",
+          "pumice",
+          "pumice 極輕量 登山背包 37l 黑",
+          "ub005",
+          "已上架",
+          "極輕量",
+          "登山背包",
+          "輕量化背包",
+          "郭小姐",
+          "黑"
+        ]
+      }
+    },
+    {
+      "id": "UB006",
+      "source_id": "UB006",
+      "source_category": "輕量化背包",
+      "name": "PUMICE 極輕量 登山背包 37L 綠",
+      "brand": "Hanchor",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 350,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 378,
+        "backpack_capacity_l": {
+          "value": 37
+        },
+        "backpack_max_load_kg": 8
+      },
+      "source": {
+        "row_number": 15
+      },
+      "search": {
+        "normalized_text": "37 378 37l 8 hanchor pumice pumice 極輕量 登山背包 37l 綠 ub006 已上架 極輕量 登山背包 綠 輕量化背包",
+        "tokens": [
+          "37",
+          "378",
+          "37l",
+          "8",
+          "hanchor",
+          "pumice",
+          "pumice 極輕量 登山背包 37l 綠",
+          "ub006",
+          "已上架",
+          "極輕量",
+          "登山背包",
+          "綠",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB007",
+      "source_id": "UB007",
+      "source_category": "輕量化背包",
+      "name": "Crown2 60L S 號",
+      "brand": "Granite Gear",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 390,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 990,
+        "backpack_capacity_l": {
+          "value": 60
+        },
+        "backpack_back_length_cm": {
+          "min": 38,
+          "max": 46
+        },
+        "backpack_waist_belt_cm": {
+          "min": 66,
+          "max": 106.7
+        },
+        "backpack_max_load_kg": 15
+      },
+      "source": {
+        "row_number": 16
+      },
+      "search": {
+        "normalized_text": "106.7 15 38 46 60 60l 66 990 crown2 crown2 60l s 號 gear granite granite gear s ub007 已上架 號 輕量化背包",
+        "tokens": [
+          "106.7",
+          "15",
+          "38",
+          "46",
+          "60",
+          "60l",
+          "66",
+          "990",
+          "crown2",
+          "crown2 60l s 號",
+          "gear",
+          "granite",
+          "granite gear",
+          "s",
+          "ub007",
+          "已上架",
+          "號",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB008",
+      "source_id": "UB008",
+      "source_category": "輕量化背包",
+      "name": "Crown2 60L M 號",
+      "brand": "Granite Gear",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 390,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 990,
+        "backpack_capacity_l": {
+          "value": 60
+        },
+        "backpack_back_length_cm": {
+          "min": 46,
+          "max": 53.5
+        },
+        "backpack_waist_belt_cm": {
+          "min": 66,
+          "max": 106.7
+        },
+        "backpack_max_load_kg": 15
+      },
+      "source": {
+        "row_number": 17
+      },
+      "search": {
+        "normalized_text": "106.7 15 46 53.5 60 60l 66 990 crown2 crown2 60l m 號 gear granite granite gear m ub008 已上架 號 輕量化背包",
+        "tokens": [
+          "106.7",
+          "15",
+          "46",
+          "53.5",
+          "60",
+          "60l",
+          "66",
+          "990",
+          "crown2",
+          "crown2 60l m 號",
+          "gear",
+          "granite",
+          "granite gear",
+          "m",
+          "ub008",
+          "已上架",
+          "號",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB009",
+      "source_id": "UB009",
+      "source_category": "輕量化背包",
+      "name": "Crown2 60L M 號",
+      "brand": "Granite Gear",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 390,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 990,
+        "backpack_capacity_l": {
+          "value": 60
+        },
+        "backpack_back_length_cm": {
+          "min": 46,
+          "max": 53.5
+        },
+        "backpack_waist_belt_cm": {
+          "min": 66,
+          "max": 106.7
+        },
+        "backpack_max_load_kg": 15
+      },
+      "source": {
+        "row_number": 18
+      },
+      "search": {
+        "normalized_text": "106.7 15 46 53.5 60 60l 66 990 crown2 crown2 60l m 號 gear granite granite gear m ub009 已上架 號 輕量化背包",
+        "tokens": [
+          "106.7",
+          "15",
+          "46",
+          "53.5",
+          "60",
+          "60l",
+          "66",
+          "990",
+          "crown2",
+          "crown2 60l m 號",
+          "gear",
+          "granite",
+          "granite gear",
+          "m",
+          "ub009",
+          "已上架",
+          "號",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB010",
+      "source_id": "UB010",
+      "source_category": "輕量化背包",
+      "name": "Crown2 60L L 號",
+      "brand": "Granite Gear",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 390,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 1040,
+        "backpack_capacity_l": {
+          "value": 60
+        },
+        "backpack_back_length_cm": {
+          "min": 53.5,
+          "max": 64
+        },
+        "backpack_waist_belt_cm": {
+          "min": 66,
+          "max": 106.7
+        },
+        "backpack_max_load_kg": 15
+      },
+      "source": {
+        "row_number": 19
+      },
+      "search": {
+        "normalized_text": "1040 106.7 15 53.5 60 60l 64 66 crown2 crown2 60l l 號 gear granite granite gear l ub010 已上架 號 輕量化背包",
+        "tokens": [
+          "1040",
+          "106.7",
+          "15",
+          "53.5",
+          "60",
+          "60l",
+          "64",
+          "66",
+          "crown2",
+          "crown2 60l l 號",
+          "gear",
+          "granite",
+          "granite gear",
+          "l",
+          "ub010",
+          "已上架",
+          "號",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB011",
+      "source_id": "UB011",
+      "source_category": "輕量化背包",
+      "name": "Flex Capacitor 40-60 黑 (M/L, S/M)",
+      "brand": "Sierra Designs",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 490,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 1160,
+        "backpack_capacity_l": {
+          "min": 40,
+          "max": 60
+        },
+        "backpack_back_length_cm": {
+          "min": 45.7,
+          "max": 53.3
+        },
+        "backpack_waist_belt_cm": {
+          "min": 66,
+          "max": 96.5
+        },
+        "backpack_max_load_kg": 22
+      },
+      "source": {
+        "row_number": 20
+      },
+      "search": {
+        "normalized_text": "1160 22 40 40-60 45.7 53.3 60 66 96.5 capacitor designs flex flex capacitor 40-60 黑 m l s m l m s sierra sierra designs ub011 已上架 輕量化背包 黑",
+        "tokens": [
+          "1160",
+          "22",
+          "40",
+          "40-60",
+          "45.7",
+          "53.3",
+          "60",
+          "66",
+          "96.5",
+          "capacitor",
+          "designs",
+          "flex",
+          "flex capacitor 40-60 黑 m l s m",
+          "l",
+          "m",
+          "s",
+          "sierra",
+          "sierra designs",
+          "ub011",
+          "已上架",
+          "輕量化背包",
+          "黑"
+        ]
+      }
+    },
+    {
+      "id": "UB012",
+      "source_id": "UB012",
+      "source_category": "輕量化背包",
+      "name": "Kakwa 40L S 號",
+      "brand": "Durston",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 690,
+        "extra_day": 150,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-24",
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 750,
+        "backpack_capacity_l": {
+          "value": 40
+        },
+        "backpack_back_length_cm": {
+          "min": 37,
+          "max": 45
+        },
+        "backpack_waist_belt_cm": {
+          "min": 71.1,
+          "max": 88.9
+        },
+        "backpack_max_load_kg": 20
+      },
+      "source": {
+        "row_number": 21
+      },
+      "search": {
+        "normalized_text": "20 2026-07-24 37 40 40l 45 71.1 750 88.9 durston kakwa kakwa 40l s 號 s ub012 已上架 號 輕量化背包",
+        "tokens": [
+          "20",
+          "2026-07-24",
+          "37",
+          "40",
+          "40l",
+          "45",
+          "71.1",
+          "750",
+          "88.9",
+          "durston",
+          "kakwa",
+          "kakwa 40l s 號",
+          "s",
+          "ub012",
+          "已上架",
+          "號",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB013",
+      "source_id": "UB013",
+      "source_category": "輕量化背包",
+      "name": "Kakwa 40L M 號",
+      "brand": "Durston",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 690,
+        "extra_day": 150,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 775,
+        "backpack_capacity_l": {
+          "value": 40
+        },
+        "backpack_back_length_cm": {
+          "min": 42,
+          "max": 50
+        },
+        "backpack_waist_belt_cm": {
+          "min": 73.7,
+          "max": 96.5
+        },
+        "backpack_max_load_kg": 20
+      },
+      "source": {
+        "row_number": 22
+      },
+      "search": {
+        "normalized_text": "20 40 40l 42 50 73.7 775 96.5 durston kakwa kakwa 40l m 號 m ub013 已上架 號 輕量化背包",
+        "tokens": [
+          "20",
+          "40",
+          "40l",
+          "42",
+          "50",
+          "73.7",
+          "775",
+          "96.5",
+          "durston",
+          "kakwa",
+          "kakwa 40l m 號",
+          "m",
+          "ub013",
+          "已上架",
+          "號",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB014",
+      "source_id": "UB014",
+      "source_category": "輕量化背包",
+      "name": "Kakwa 40L L 號",
+      "brand": "Durston",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 690,
+        "extra_day": 150,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-24",
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 800,
+        "backpack_capacity_l": {
+          "value": 40
+        },
+        "backpack_back_length_cm": {
+          "min": 47,
+          "max": 55
+        },
+        "backpack_waist_belt_cm": {
+          "min": 76.2,
+          "max": 101.6
+        },
+        "backpack_max_load_kg": 20
+      },
+      "source": {
+        "row_number": 23
+      },
+      "search": {
+        "normalized_text": "101.6 20 2026-07-24 40 40l 47 55 76.2 800 durston kakwa kakwa 40l l 號 l ub014 已上架 號 輕量化背包",
+        "tokens": [
+          "101.6",
+          "20",
+          "2026-07-24",
+          "40",
+          "40l",
+          "47",
+          "55",
+          "76.2",
+          "800",
+          "durston",
+          "kakwa",
+          "kakwa 40l l 號",
+          "l",
+          "ub014",
+          "已上架",
+          "號",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB015",
+      "source_id": "UB015",
+      "source_category": "輕量化背包",
+      "name": "THREE 40L M 號",
+      "brand": "山と道Yamatomichi",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 790,
+        "extra_day": 150,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 602,
+        "backpack_capacity_l": {
+          "value": 40
+        },
+        "backpack_back_length_cm": {
+          "min": 45,
+          "max": 48
+        },
+        "backpack_max_load_kg": 10
+      },
+      "source": {
+        "row_number": 24
+      },
+      "search": {
+        "normalized_text": "10 40 40l 45 48 602 m three three 40l m 號 ub015 山と道yamatomichi 已上架 號 輕量化背包",
+        "tokens": [
+          "10",
+          "40",
+          "40l",
+          "45",
+          "48",
+          "602",
+          "m",
+          "three",
+          "three 40l m 號",
+          "ub015",
+          "山と道yamatomichi",
+          "已上架",
+          "號",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB016",
+      "source_id": "UB016",
+      "source_category": "輕量化背包",
+      "name": "THREE 45L L 號",
+      "brand": "山と道Yamatomichi",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 790,
+        "extra_day": 150,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 649,
+        "backpack_capacity_l": {
+          "value": 45
+        },
+        "backpack_back_length_cm": {
+          "min": 54,
+          "max": 57
+        },
+        "backpack_max_load_kg": 10
+      },
+      "source": {
+        "row_number": 25
+      },
+      "search": {
+        "normalized_text": "10 45 45l 54 57 649 l three three 45l l 號 ub016 山と道yamatomichi 已上架 號 輕量化背包",
+        "tokens": [
+          "10",
+          "45",
+          "45l",
+          "54",
+          "57",
+          "649",
+          "l",
+          "three",
+          "three 45l l 號",
+          "ub016",
+          "山と道yamatomichi",
+          "已上架",
+          "號",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB017",
+      "source_id": "UB017",
+      "source_category": "輕量化背包",
+      "name": "ONE 50L 背長51cm",
+      "brand": "山と道Yamatomichi",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 990,
+        "extra_day": 200,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 538,
+        "backpack_capacity_l": {
+          "value": 50
+        },
+        "backpack_back_length_cm": {
+          "value": 51
+        },
+        "backpack_waist_belt_cm": {
+          "min": -85,
+          "max": 78
+        },
+        "backpack_max_load_kg": 11
+      },
+      "source": {
+        "row_number": 26
+      },
+      "search": {
+        "normalized_text": "-85 11 50 50l 51 538 78 one one 50l 背長51cm ub017 山と道yamatomichi 已上架 背長51cm 輕量化背包",
+        "tokens": [
+          "-85",
+          "11",
+          "50",
+          "50l",
+          "51",
+          "538",
+          "78",
+          "one",
+          "one 50l 背長51cm",
+          "ub017",
+          "山と道yamatomichi",
+          "已上架",
+          "背長51cm",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB018",
+      "source_id": "UB018",
+      "source_category": "輕量化背包",
+      "name": "Framus 58L UltraX Black S號",
+      "brand": "Bonfus",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 1290,
+        "extra_day": 200,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 730,
+        "backpack_capacity_l": {
+          "value": 58
+        },
+        "backpack_back_length_cm": {
+          "min": 35,
+          "max": 43
+        },
+        "backpack_waist_belt_cm": {
+          "min": 74.9,
+          "max": 99.1
+        },
+        "backpack_max_load_kg": 18
+      },
+      "source": {
+        "row_number": 27
+      },
+      "search": {
+        "normalized_text": "18 35 43 58 58l 730 74.9 99.1 black bonfus framus framus 58l ultrax black s號 s號 ub018 ultrax 已上架 輕量化背包",
+        "tokens": [
+          "18",
+          "35",
+          "43",
+          "58",
+          "58l",
+          "730",
+          "74.9",
+          "99.1",
+          "black",
+          "bonfus",
+          "framus",
+          "framus 58l ultrax black s號",
+          "s號",
+          "ub018",
+          "ultrax",
+          "已上架",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "UB019",
+      "source_id": "UB019",
+      "source_category": "輕量化背包",
+      "name": "Framus 58L UltraX Black M號",
+      "brand": "Bonfus",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 1290,
+        "extra_day": 200,
+        "deposit": 2000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 770,
+        "backpack_capacity_l": {
+          "value": 58
+        },
+        "backpack_back_length_cm": {
+          "min": 43,
+          "max": 49.5
+        },
+        "backpack_waist_belt_cm": {
+          "min": 83.8,
+          "max": 109.2
+        },
+        "backpack_max_load_kg": 18
+      },
+      "source": {
+        "row_number": 28
+      },
+      "search": {
+        "normalized_text": "109.2 18 43 49.5 58 58l 770 83.8 black bonfus framus framus 58l ultrax black m號 m號 ub019 ultrax 已上架 輕量化背包",
+        "tokens": [
+          "109.2",
+          "18",
+          "43",
+          "49.5",
+          "58",
+          "58l",
+          "770",
+          "83.8",
+          "black",
+          "bonfus",
+          "framus",
+          "framus 58l ultrax black m號",
+          "m號",
+          "ub019",
+          "ultrax",
+          "已上架",
+          "輕量化背包"
+        ]
+      }
+    },
+    {
+      "id": "US001",
+      "source_id": "US001",
+      "source_category": "輕量化睡袋",
+      "name": "無底睡袋 可全開",
+      "brand": null,
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 490,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "送洗",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 570,
+        "sleeping_bag_style": "可全開",
+        "sleeping_bag_down_fill_power_fp": 1000,
+        "sleeping_bag_down_fill_weight_g": 370,
+        "sleeping_bag_suitable_height_cm_max": 165,
+        "sleeping_bag_comfort_temperature_c": -3,
+        "sleeping_bag_limit_temperature_c": -7
+      },
+      "source": {
+        "row_number": 29
+      },
+      "search": {
+        "normalized_text": "-3 -7 1000 165 370 570 us001 可全開 無底睡袋 無底睡袋 可全開 輕量化睡袋 送洗",
+        "tokens": [
+          "-3",
+          "-7",
+          "1000",
+          "165",
+          "370",
+          "570",
+          "us001",
+          "可全開",
+          "無底睡袋",
+          "無底睡袋 可全開",
+          "輕量化睡袋",
+          "送洗"
+        ]
+      }
+    },
+    {
+      "id": "US002",
+      "source_id": "US002",
+      "source_category": "輕量化睡袋",
+      "name": "無底睡袋 可全開",
+      "brand": null,
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 490,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "送洗",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 587,
+        "sleeping_bag_style": "可全開",
+        "sleeping_bag_down_fill_power_fp": 900,
+        "sleeping_bag_down_fill_weight_g": 410,
+        "sleeping_bag_suitable_height_cm_max": 188,
+        "sleeping_bag_comfort_temperature_c": -3,
+        "sleeping_bag_limit_temperature_c": -7
+      },
+      "source": {
+        "row_number": 30
+      },
+      "search": {
+        "normalized_text": "-3 -7 188 410 587 900 us002 可全開 無底睡袋 無底睡袋 可全開 輕量化睡袋 送洗",
+        "tokens": [
+          "-3",
+          "-7",
+          "188",
+          "410",
+          "587",
+          "900",
+          "us002",
+          "可全開",
+          "無底睡袋",
+          "無底睡袋 可全開",
+          "輕量化睡袋",
+          "送洗"
+        ]
+      }
+    },
+    {
+      "id": "US003",
+      "source_id": "US003",
+      "source_category": "輕量化睡袋",
+      "name": "無底睡袋 半開",
+      "brand": null,
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 490,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 490,
+        "sleeping_bag_style": "半開",
+        "sleeping_bag_down_fill_power_fp": 900,
+        "sleeping_bag_down_fill_weight_g": 350,
+        "sleeping_bag_suitable_height_cm_max": 175,
+        "sleeping_bag_comfort_temperature_c": -2,
+        "sleeping_bag_limit_temperature_c": -6
+      },
+      "source": {
+        "row_number": 31
+      },
+      "search": {
+        "normalized_text": "-2 -6 175 350 490 900 us003 半開 已上架 無底睡袋 無底睡袋 半開 輕量化睡袋",
+        "tokens": [
+          "-2",
+          "-6",
+          "175",
+          "350",
+          "490",
+          "900",
+          "us003",
+          "半開",
+          "已上架",
+          "無底睡袋",
+          "無底睡袋 半開",
+          "輕量化睡袋"
+        ]
+      }
+    },
+    {
+      "id": "US004",
+      "source_id": "US004",
+      "source_category": "輕量化睡袋",
+      "name": "無底睡袋 半開",
+      "brand": null,
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 490,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 490,
+        "sleeping_bag_style": "半開",
+        "sleeping_bag_down_fill_power_fp": 900,
+        "sleeping_bag_down_fill_weight_g": 350,
+        "sleeping_bag_suitable_height_cm_max": 175,
+        "sleeping_bag_comfort_temperature_c": -2,
+        "sleeping_bag_limit_temperature_c": -6
+      },
+      "source": {
+        "row_number": 32
+      },
+      "search": {
+        "normalized_text": "-2 -6 175 350 490 900 us004 半開 已上架 無底睡袋 無底睡袋 半開 輕量化睡袋",
+        "tokens": [
+          "-2",
+          "-6",
+          "175",
+          "350",
+          "490",
+          "900",
+          "us004",
+          "半開",
+          "已上架",
+          "無底睡袋",
+          "無底睡袋 半開",
+          "輕量化睡袋"
+        ]
+      }
+    },
+    {
+      "id": "US005",
+      "source_id": "US005",
+      "source_category": "輕量化睡袋",
+      "name": "木乃伊睡袋",
+      "brand": null,
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 490,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-19",
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 615,
+        "sleeping_bag_style": "木乃伊",
+        "sleeping_bag_down_fill_power_fp": 900,
+        "sleeping_bag_down_fill_weight_g": 400,
+        "sleeping_bag_suitable_height_cm_max": 168,
+        "sleeping_bag_comfort_temperature_c": -4,
+        "sleeping_bag_limit_temperature_c": -7
+      },
+      "source": {
+        "row_number": 33
+      },
+      "search": {
+        "normalized_text": "-4 -7 168 2026-07-19 400 615 900 us005 已上架 木乃伊 木乃伊睡袋 輕量化睡袋",
+        "tokens": [
+          "-4",
+          "-7",
+          "168",
+          "2026-07-19",
+          "400",
+          "615",
+          "900",
+          "us005",
+          "已上架",
+          "木乃伊",
+          "木乃伊睡袋",
+          "輕量化睡袋"
+        ]
+      }
+    },
+    {
+      "id": "US006",
+      "source_id": "US006",
+      "source_category": "輕量化睡袋",
+      "name": "木乃伊睡袋",
+      "brand": null,
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 590,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 715,
+        "sleeping_bag_style": "木乃伊",
+        "sleeping_bag_down_fill_power_fp": 900,
+        "sleeping_bag_down_fill_weight_g": 500,
+        "sleeping_bag_suitable_height_cm_max": 168,
+        "sleeping_bag_comfort_temperature_c": -6,
+        "sleeping_bag_limit_temperature_c": -9
+      },
+      "source": {
+        "row_number": 34
+      },
+      "search": {
+        "normalized_text": "-6 -9 168 500 715 900 us006 已上架 木乃伊 木乃伊睡袋 輕量化睡袋",
+        "tokens": [
+          "-6",
+          "-9",
+          "168",
+          "500",
+          "715",
+          "900",
+          "us006",
+          "已上架",
+          "木乃伊",
+          "木乃伊睡袋",
+          "輕量化睡袋"
+        ]
+      }
+    },
+    {
+      "id": "US007",
+      "source_id": "US007",
+      "source_category": "輕量化睡袋",
+      "name": "木乃伊睡袋",
+      "brand": null,
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 490,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-24",
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 710,
+        "sleeping_bag_style": "木乃伊",
+        "sleeping_bag_down_fill_power_fp": 900,
+        "sleeping_bag_down_fill_weight_g": 468,
+        "sleeping_bag_suitable_height_cm_max": 180,
+        "sleeping_bag_comfort_temperature_c": -4,
+        "sleeping_bag_limit_temperature_c": -7
+      },
+      "source": {
+        "row_number": 35
+      },
+      "search": {
+        "normalized_text": "-4 -7 180 2026-07-24 468 710 900 us007 已上架 木乃伊 木乃伊睡袋 輕量化睡袋",
+        "tokens": [
+          "-4",
+          "-7",
+          "180",
+          "2026-07-24",
+          "468",
+          "710",
+          "900",
+          "us007",
+          "已上架",
+          "木乃伊",
+          "木乃伊睡袋",
+          "輕量化睡袋"
+        ]
+      }
+    },
+    {
+      "id": "US008",
+      "source_id": "US008",
+      "source_category": "輕量化睡袋",
+      "name": "木乃伊睡袋",
+      "brand": null,
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 590,
+        "extra_day": 100,
+        "deposit": 1000
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-24",
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 792,
+        "sleeping_bag_style": "木乃伊",
+        "sleeping_bag_down_fill_power_fp": 900,
+        "sleeping_bag_down_fill_weight_g": 550,
+        "sleeping_bag_suitable_height_cm_max": 180,
+        "sleeping_bag_comfort_temperature_c": -6,
+        "sleeping_bag_limit_temperature_c": -9
+      },
+      "source": {
+        "row_number": 36
+      },
+      "search": {
+        "normalized_text": "-6 -9 180 2026-07-24 550 792 900 us008 已上架 木乃伊 木乃伊睡袋 輕量化睡袋",
+        "tokens": [
+          "-6",
+          "-9",
+          "180",
+          "2026-07-24",
+          "550",
+          "792",
+          "900",
+          "us008",
+          "已上架",
+          "木乃伊",
+          "木乃伊睡袋",
+          "輕量化睡袋"
+        ]
+      }
+    },
+    {
+      "id": "UP001",
+      "source_id": null,
+      "source_category": "其他裝備",
+      "name": "蛋殼睡墊RPO",
+      "brand": "OWG",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 90,
+        "extra_day": 30,
+        "deposit": 0
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": "7/20 2天 郭小姐"
+      },
+      "specs": {
+        "weight_g": 400,
+        "r_value": 2.1,
+        "expanded_size_cm": {
+          "length": 183,
+          "width": 60,
+          "height": 2,
+          "unit": "cm"
+        },
+        "packed_size_cm": {
+          "length": 60,
+          "width": 15,
+          "height": 13,
+          "unit": "cm"
+        }
+      },
+      "source": {
+        "row_number": 37
+      },
+      "search": {
+        "normalized_text": "13 15 183 2 2.1 20 2天 400 60 7 7 20 2天 郭小姐 cm owg up001 其他裝備 已上架 蛋殼睡墊rpo 郭小姐",
+        "tokens": [
+          "13",
+          "15",
+          "183",
+          "2",
+          "2.1",
+          "20",
+          "2天",
+          "400",
+          "60",
+          "7",
+          "7 20 2天 郭小姐",
+          "cm",
+          "owg",
+          "up001",
+          "其他裝備",
+          "已上架",
+          "蛋殼睡墊rpo",
+          "郭小姐"
+        ]
+      }
+    },
+    {
+      "id": "UP002",
+      "source_id": null,
+      "source_category": "其他裝備",
+      "name": "蛋殼睡墊AIR",
+      "brand": "OWG",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 90,
+        "extra_day": 30,
+        "deposit": 0
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": null,
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 310,
+        "r_value": 1.8,
+        "expanded_size_cm": {
+          "length": 183,
+          "width": 55,
+          "height": 1.8,
+          "unit": "cm"
+        },
+        "packed_size_cm": {
+          "length": 55,
+          "width": 13,
+          "height": 14.5,
+          "unit": "cm"
+        }
+      },
+      "source": {
+        "row_number": 38
+      },
+      "search": {
+        "normalized_text": "1.8 13 14.5 183 310 55 cm owg up002 其他裝備 已上架 蛋殼睡墊air",
+        "tokens": [
+          "1.8",
+          "13",
+          "14.5",
+          "183",
+          "310",
+          "55",
+          "cm",
+          "owg",
+          "up002",
+          "其他裝備",
+          "已上架",
+          "蛋殼睡墊air"
+        ]
+      }
+    },
+    {
+      "id": "UE001",
+      "source_id": null,
+      "source_category": "其他裝備",
+      "name": "20000mAh 碳纖維輕量行動電源",
+      "brand": "NITECORE",
+      "pricing": {
+        "currency": "TWD",
+        "base_rental": 190,
+        "extra_day": 50,
+        "deposit": 500
+      },
+      "inventory": {
+        "listing_status": "已上架",
+        "rental_until": "2026-07-19",
+        "reservation": null
+      },
+      "specs": {
+        "weight_g": 324.5,
+        "power_capacity_mah": 20000,
+        "water_resistance": "IPX5"
+      },
+      "source": {
+        "row_number": 39
+      },
+      "search": {
+        "normalized_text": "20000 20000mah 20000mah 碳纖維輕量行動電源 2026-07-19 324.5 ipx5 nitecore ue001 其他裝備 已上架 碳纖維輕量行動電源",
+        "tokens": [
+          "20000",
+          "20000mah",
+          "20000mah 碳纖維輕量行動電源",
+          "2026-07-19",
+          "324.5",
+          "ipx5",
+          "nitecore",
+          "ue001",
+          "其他裝備",
+          "已上架",
+          "碳纖維輕量行動電源"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source_url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRshojqbRnT4QAMdMg-JlyaG969mUcNtP9Q_iV2nXETyIca8Sek0UhfunjM_BSR9Q/pub?output=csv",
+    "generated_at": "2026-07-05T08:01:19.914Z",
+    "source_columns": [
+      "商品類別",
+      "商品編號",
+      "品牌",
+      "品名",
+      "重量",
+      "兩天一夜租金",
+      "續租日租金",
+      "押金",
+      "上架狀態",
+      "出租中 / 歸還日",
+      "預約",
+      "帳篷容量",
+      "帳篷結構",
+      "背包容量",
+      "背包背長",
+      "背包腰圍",
+      "背包限重",
+      "睡袋款式",
+      "睡袋羽絨等級",
+      "睡袋羽絨填充量",
+      "睡袋適合身高",
+      "睡袋舒適溫度",
+      "睡袋極限溫度",
+      "其他規格說明"
+    ],
+    "product_count": 37
+  }
+}

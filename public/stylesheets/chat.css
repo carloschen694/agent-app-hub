@@ -1,0 +1,7 @@
+  body { display:flex;flex-direction: column;height:100vh;margin:0; }
+  #chatArea { padding: 10px; flex: 1; overflow-y: scroll; display: flex; flex-direction: column; }
+  #toolbar { flex: 0 44px; display: flex; padding: 5px; }
+  #userInput { flex: 1; margin-right: 5px; }
+  p { display: block; color: white; padding: 10px; margin: 5px; border-radius: 10px; max-width: 80%; }
+  p.ai { background: green; align-self: flex-start; border-bottom-left-radius: 0; }
+  p.user { background: blue; align-self: flex-end; border-bottom-right-radius: 0; }
