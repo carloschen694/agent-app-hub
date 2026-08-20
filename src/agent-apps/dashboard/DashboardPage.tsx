@@ -1,14 +1,17 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { agentAppRegistry } from '../../config/agentAppRegistry';
 import { Card } from '../../shared/components/Card';
 import { Button } from '../../shared/components/Button';
+import { useHiddenAppIds } from '../../shared/hooks/useHiddenAppIds';
 
 export const DashboardPage: React.FC = () => {
   const navigate = useNavigate();
+  const hiddenAppIds = useHiddenAppIds();
 
-  // Filter out the dashboard app itself
-  const apps = agentAppRegistry.filter(app => app.agentAppId !== 'dashboard');
+  // Filter out the dashboard app itself and any app the user hid in settings
+  const allApps = agentAppRegistry.filter(app => app.agentAppId !== 'dashboard');
+  const apps = allApps.filter(app => !hiddenAppIds.has(app.agentAppId));
 
   return (
     <div className="space-y-6">
@@ -22,7 +25,16 @@ export const DashboardPage: React.FC = () => {
       {apps.length === 0 ? (
         <div className="bg-white border border-slate-200 rounded-lg p-12 text-center text-slate-500">
           <span className="material-symbols-outlined text-4xl text-slate-300 mb-2">widgets</span>
-          <p className="text-xs font-medium">目前尚未註冊任何 Agent 應用程式。</p>
+          {allApps.length === 0 ? (
+            <p className="text-xs font-medium">目前尚未註冊任何 Agent 應用程式。</p>
+          ) : (
+            <>
+              <p className="text-xs font-medium">目前所有 App 都已在顯示設定中隱藏。</p>
+              <Link to="/settings/apps" className="mt-2 inline-block text-xs font-semibold text-blue-600 hover:underline">
+                前往顯示設定
+              </Link>
+            </>
+          )}
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

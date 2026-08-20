@@ -33,6 +33,10 @@ npm run test     # 只跑測試
 npm run lint     # 靜態檢查
 ```
 
+## 顯示 / 隱藏 App
+
+導覽列右上角的齒輪圖示（或直接開啟 `/#/settings/apps`）可進入顯示設定頁，個別開關要在導覽選單與首頁大廳出現的 App。首頁大廳（`dashboard`）一律顯示、無法隱藏。設定存於瀏覽器 `localStorage`（`agent_hub_hidden_apps`），只影響目前這台裝置，不會同步給其他人（對應原始碼 `src/shared/repositories/appVisibilityRepository.ts`、`src/app-shell/AppVisibilityPage.tsx`）。
+
 ## 環境變數設定
 
 複製 `.env.example` 為 `.env` 並視需要填入：

@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter, Link, useLocation, useRoutes, type RouteObject } from 'react-router-dom';
 import { AppLayout } from './AppLayout';
 import { agentAppRegistry } from '../config/agentAppRegistry';
+import { AppVisibilityPage } from './AppVisibilityPage';
 
 export const AppRouter: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ export const hubRouteObjects: RouteObject[] = [{
     ...agentAppRegistry.map((app): RouteObject => app.route === '/'
       ? { index: true, element: <app.MainView /> }
       : { path: app.route.replace(/^\//, ''), caseSensitive: true, element: <app.MainView /> }),
+    { path: 'settings/apps', caseSensitive: true, element: <AppVisibilityPage /> },
     { path: '*', element: <RouteNotFoundPage /> },
   ],
 }];

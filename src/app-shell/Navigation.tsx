@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { agentAppRegistry } from '../config/agentAppRegistry';
+import { useHiddenAppIds } from '../shared/hooks/useHiddenAppIds';
 
-export function visibleNavigationApps() {
-  return agentAppRegistry.filter((app) => app.agentAppId !== 'dashboard');
+export function visibleNavigationApps(hiddenAppIds: ReadonlySet<string> = new Set()) {
+  return agentAppRegistry.filter((app) => app.agentAppId !== 'dashboard' && !hiddenAppIds.has(app.agentAppId));
 }
 
 export const Navigation: React.FC = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const hiddenAppIds = useHiddenAppIds();
 
-  const apps = visibleNavigationApps();
+  const apps = visibleNavigationApps(hiddenAppIds);
   const activeApp = agentAppRegistry.find((app) => app.route === location.pathname);
 
   return (
@@ -41,7 +43,21 @@ export const Navigation: React.FC = () => {
           )}
         </div>
 
-        <div className="relative shrink-0">
+        <div className="relative flex shrink-0 items-center gap-2">
+          <Link
+            to="/settings/apps"
+            onClick={() => setIsMenuOpen(false)}
+            title="Agent App 顯示設定"
+            aria-label="Agent App 顯示設定"
+            className={`flex h-9 w-9 items-center justify-center rounded border transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              location.pathname === '/settings/apps'
+                ? 'border-blue-200 bg-blue-50 text-blue-700'
+                : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-50'
+            }`}
+          >
+            <span className="material-symbols-outlined text-[20px]">settings</span>
+          </Link>
+
           <button
             type="button"
             onClick={() => setIsMenuOpen((open) => !open)}
