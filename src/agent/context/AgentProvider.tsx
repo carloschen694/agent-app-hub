@@ -24,52 +24,7 @@ import {
   type LiveInteractionSession,
   type LiveInteractionStatus
 } from '../services/liveInteractionService';
-import { retrieveTopK as retrieveCourseMaterials } from '../services/courseRagService';
 import { getScopeBlock } from './systemPromptScope';
-
-const QUERY_COURSE_MATERIALS_TOOL: ToolDefinition = {
-  name: 'queryCourseMaterials',
-  description: 'Search course slides, speaker notes, and example code to answer student questions about Gemini API, AI Agent development, or course concepts.',
-  parameters: {
-    type: 'OBJECT',
-    properties: {
-      query: {
-        type: 'STRING',
-        description: 'The search query in Chinese, e.g., "Function Calling 實作步驟" or "Camping RAG"'
-      }
-    },
-    required: ['query']
-  }
-};
-
-/**
- * 課程檢索 handler，供一般聊天／長任務／語音三條路徑共用。
- * 回傳結構化引用（課別、章節、投影片編號），讓系統提示要求的 Citations 能落實到頁碼。
- */
-function createCourseMaterialsHandler(apiKey: string, onProgress: (query: string) => void) {
-  return async (args: any) => {
-    const query = args?.query || '';
-    if (!query) {
-      return { error: 'query 參數必填' };
-    }
-    onProgress(query);
-    const results = await retrieveCourseMaterials(apiKey, query);
-    if (results.length === 0) {
-      return { query, results: [], note: '課程教材中找不到相關內容，請據實告知學生，不要臆測。' };
-    }
-    return {
-      query,
-      results: results.map(r => ({
-        classId: r.classId,
-        chapterTitle: r.chapterTitle,
-        slideNo: r.slideNo,
-        slideTitle: r.slideTitle,
-        sourceFile: r.sourceFile,
-        content: r.content
-      }))
-    };
-  };
-}
 
 export const AgentProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Settings State
@@ -225,11 +180,8 @@ ${activeSystemPrompt}
 ---
 AI TEACHER PROTOCOL:
 - You are a friendly, encouraging AI Teacher helping a beginner learn Gemini API development.
-- You have access to the \`queryCourseMaterials\` tool to search course slides, speaker notes, and example projects.
-- CRITICAL: Do NOT proactively bring up course slides or call the tool unless the user explicitly asks about course concepts, how to write code, or requests explanations/examples.
 ${scopeBlock}
 - Tone: Keep your language simple, clear, and beginner-friendly. Avoid unexplained complex jargon.
-- Citations: When you answer using information retrieved from the tool, cite the source file or slide page (e.g., "這在 Class 04 的 Slide 12 有提到，你可以參考 \`class04/example01\` 的 \`app.js\`...") so the student knows where to locate the material.
 
 ---
 RUNTIME CONTEXT:
@@ -302,13 +254,9 @@ ${LONG_TASK_PROTOCOL_PROMPT}
             tasks.length,
             taskResults.filter(item => !item.failed)
           ),
-          tools: [...activeTools, QUERY_COURSE_MATERIALS_TOOL],
+          tools: [...activeTools],
           toolHandlers: {
-            ...toolHandlersRef.current,
-            [QUERY_COURSE_MATERIALS_TOOL.name]: createCourseMaterialsHandler(
-              settings.apiKey,
-              (query) => reportActivity('task', `任務 ${i + 1}/${tasks.length}：正在檢索課程資料庫「${query}」…`)
-            )
+            ...toolHandlersRef.current
           },
           onActivity: (_state, detail) =>
             reportActivity('task', `任務 ${i + 1}/${tasks.length}：${detail}`)
@@ -460,13 +408,9 @@ ${LONG_TASK_PROTOCOL_PROMPT}
         history: session.messages,
         messageText: text,
         attachments,
-        tools: [...activeTools, QUERY_COURSE_MATERIALS_TOOL, PLAN_LONG_TASKS_TOOL],
+        tools: [...activeTools, PLAN_LONG_TASKS_TOOL],
         toolHandlers: {
           ...toolHandlersRef.current,
-          [QUERY_COURSE_MATERIALS_TOOL.name]: createCourseMaterialsHandler(
-            settings.apiKey,
-            (query) => reportActivity('tool', `正在檢索課程資料庫「${query}」…`)
-          ),
           [PLAN_LONG_TASKS_TOOL.name]: (args: any) => {
             const tasks = Array.isArray(args?.tasks)
               ? args.tasks
@@ -574,13 +518,9 @@ ${LONG_TASK_PROTOCOL_PROMPT}
           buildFullSystemPrompt() +
           LIVE_VOICE_STYLE_PROMPT +
           (overrides?.systemPromptSuffix ? `\n${overrides.systemPromptSuffix}` : ''),
-        tools: [...activeTools, POST_CHAT_MESSAGE_TOOL, QUERY_COURSE_MATERIALS_TOOL, PLAN_LONG_TASKS_TOOL],
+        tools: [...activeTools, POST_CHAT_MESSAGE_TOOL, PLAN_LONG_TASKS_TOOL],
         toolHandlers: {
           ...toolHandlersRef.current,
-          [QUERY_COURSE_MATERIALS_TOOL.name]: createCourseMaterialsHandler(
-            settings.apiKey,
-            (query) => reportActivity('tool', `正在檢索課程資料庫「${query}」…`)
-          ),
           [PLAN_LONG_TASKS_TOOL.name]: (args: any) => {
             const tasks = Array.isArray(args?.tasks)
               ? args.tasks

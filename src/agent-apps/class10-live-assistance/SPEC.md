@@ -134,7 +134,7 @@ interface Memo {
 ### 4.1 知識庫
 訓練資料 ＋ **Google 搜尋 grounding**。系統提示詞硬性要求：任何會隨時間改變的事實（價格、版本、政策、
 新聞、人事、規格）一律搜尋查證後再回答。殼層 `geminiService.ts` 已無條件掛上 `{ googleSearch: {} }`，
-語音 session 亦同。另有殼層注入的 `queryCourseMaterials`（課程 RAG）。
+語音 session 亦同。
 
 ### 4.2 經驗（記憶）
 
@@ -173,7 +173,7 @@ interface Memo {
 `saveLongTermMemory` / `saveShortTermMemory` / `queryMemory` / `consolidateMemory`
 
 ### 殼層自動附加
-`googleSearch`、`postChatMessage`、`queryCourseMaterials`、`planLongTasks`
+`googleSearch`、`postChatMessage`、`planLongTasks`
 
 ### 個性參數化
 四種個性（積極活潑／成熟穩重／冷峻專業／慎重謹慎）沿同一組軸線差異化，而非各寫一段散文：

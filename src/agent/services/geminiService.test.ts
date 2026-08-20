@@ -46,7 +46,7 @@ describe('geminiService Unit Tests', () => {
 });
 
 describe('buildContentsHistory — 舊檢索結果折疊', () => {
-  // 貼近真實檢索量級：courseRagService 的 MAX_TOTAL_CHARS 為 6000
+  // 貼近真實檢索量級（大型工具回傳內容折疊測試）
   const slideContent = '這裡是很長的投影片內容。'.repeat(500);
 
   const courseCall = (id: string, slideNo: number): Message => ({
