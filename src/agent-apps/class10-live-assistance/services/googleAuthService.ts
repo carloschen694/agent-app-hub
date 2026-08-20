@@ -1,5 +1,3 @@
-import { getApiBaseUrl } from '../../../shared/auth';
-
 export type GoogleServiceKey = 'contacts' | 'calendar' | 'gmail';
 export type TokenStatus = 'authorized' | 'needs_renewal' | 'unauthorized';
 
@@ -82,20 +80,6 @@ export async function fetchGoogleClientId(): Promise<string> {
     cachedClientId = envClientId;
     return envClientId;
   }
-
-  try {
-    const apiBase = getApiBaseUrl();
-    const res = await fetch(`${apiBase}/api/auth/config`);
-    if (res.ok) {
-      const data = await res.json();
-      if (typeof data.googleClientId === 'string' && data.googleClientId) {
-        cachedClientId = data.googleClientId;
-        return data.googleClientId;
-      }
-    }
-  } catch (err) {
-    console.error('Failed to fetch googleClientId config', err);
-  }
   return '';
 }
 
@@ -117,7 +101,7 @@ export async function requestGoogleScope(service: GoogleServiceKey, clientId?: s
   if (!effectiveClientId) {
     console.warn('Google Client ID not configured, cannot initiate OAuth flow.');
     if (typeof alert !== 'undefined') {
-      alert('無法觸發授權：尚未取得有效的 Google Client ID。請確認後端服務運作中或設定 VITE_GOOGLE_CLIENT_ID。');
+      alert('無法觸發授權：尚未取得有效的 Google Client ID。請在 .env 設定 VITE_GOOGLE_CLIENT_ID。');
     }
     return false;
   }
