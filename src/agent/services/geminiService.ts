@@ -71,14 +71,14 @@ export async function fetchGeminiModels(apiKey: string): Promise<string[]> {
 
 // 靜態 Fallback 清單（僅在 API 無法動態取得時使用）
 export const OFFLINE_MODELS = [
+  'gemini-3.6-flash',
   'gemini-3.5-flash',
-  'gemini-2.5-flash',
   'gemini-2.5-pro'
 ];
 
 export const LIVE_MODELS = [
   'gemini-3.1-flash-live-preview',
-  'gemini-2.5-flash',
+  'gemini-3.6-flash',
   'gemini-2.0-flash-exp',
   'gemini-1.5-flash'
 ];

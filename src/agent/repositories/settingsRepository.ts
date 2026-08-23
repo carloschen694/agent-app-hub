@@ -18,7 +18,7 @@ const SETTINGS_KEY = 'agent_hub_settings';
 
 const DEFAULT_SETTINGS: AgentSettings = {
   apiKey: '',
-  model: 'gemini-3.5-flash',
+  model: 'gemini-3.6-flash',
   liveApiKey: '',
   liveModel: 'gemini-3.1-flash-live-preview',
   liveVoice: 'Puck',
