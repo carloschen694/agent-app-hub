@@ -19,3 +19,6 @@ npm-debug.log*
 # env
 .env
 .env.local
+.env*.local
+*-service-account.json
+*firebase-adminsdk*.json
