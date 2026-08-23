@@ -22,3 +22,5 @@ npm-debug.log*
 .env*.local
 *-service-account.json
 *firebase-adminsdk*.json
+.vercel
+.env*
