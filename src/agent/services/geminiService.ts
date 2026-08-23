@@ -36,8 +36,10 @@ export function parseGeminiError(error: any): ErrorDetails {
     msg.includes('RESOURCE_EXHAUSTED') ||
     msg.includes('429') ||
     msg.includes('quota exceeded') ||
-    msg.includes('Quota') ||
-    msg.includes('limit')
+    msg.includes('Quota exceeded') ||
+    msg.includes('rate limit exceeded') ||
+    msg.includes('rateLimitExceeded') ||
+    msg.includes('RATE_LIMIT_EXCEEDED')
   ) {
     friendlyTitle = '額度已達上限';
     friendlyDesc = '您的 API Key 目前已達到使用配額或請求頻率限制，請稍後再試。';
