@@ -33,6 +33,7 @@ export interface StartLiveInteractionOptions {
   mediaResolution?: string;
   callbacks?: LiveInteractionCallbacks;
   GoogleGenAICtor?: typeof GoogleGenAI;
+  enableGoogleSearch?: boolean;
 }
 
 export interface LiveInteractionSession {
@@ -244,7 +245,8 @@ export async function startLiveInteraction({
   voiceName = DEFAULT_LIVE_VOICE,
   mediaResolution = DEFAULT_LIVE_MEDIA_RESOLUTION,
   callbacks,
-  GoogleGenAICtor = GoogleGenAI
+  GoogleGenAICtor = GoogleGenAI,
+  enableGoogleSearch = false
 }: StartLiveInteractionOptions): Promise<LiveInteractionSession> {
   // Use GoogleGenAI directly without Gateway baseUrl for Live WebSocket,
   // as Gateway/BFF does not proxy Gemini Live WebSockets.
@@ -335,7 +337,7 @@ export async function startLiveInteraction({
               }
             },
             tools: [
-              { googleSearch: {} },
+              ...(enableGoogleSearch ? [{ googleSearch: {} }] : []),
               ...(tools.length > 0
                 ? [{
                     functionDeclarations: tools.map(tool => ({

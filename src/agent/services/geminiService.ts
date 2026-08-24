@@ -102,11 +102,12 @@ interface SendMessageParams {
   tools?: ToolDefinition[];
   toolHandlers?: ToolHandlerMap;
   onActivity?: (state: 'thinking' | 'tool', detail: string) => void;
+  enableGoogleSearch?: boolean;
 }
 
-function buildAlwaysOnTools(tools: ToolDefinition[]) {
+function buildAlwaysOnTools(tools: ToolDefinition[], enableGoogleSearch = false) {
   return [
-    { googleSearch: {} },
+    ...(enableGoogleSearch ? [{ googleSearch: {} }] : []),
     ...(tools.length > 0
       ? [{
           functionDeclarations: tools.map(t => ({
@@ -271,7 +272,8 @@ export async function sendChatMessage({
   attachments = [],
   tools = [],
   toolHandlers = {},
-  onActivity
+  onActivity,
+  enableGoogleSearch = false
 }: SendMessageParams): Promise<{
   content: string;
   groundingMetadata?: WebSearchGroundingMetadata;
@@ -299,7 +301,7 @@ export async function sendChatMessage({
     response = await generateContent(apiKey, modelName, {
       contents,
       systemInstruction: { parts: [{ text: systemPrompt }] },
-      tools: buildAlwaysOnTools(tools),
+      tools: buildAlwaysOnTools(tools, enableGoogleSearch),
       toolConfig: { includeServerSideToolInvocations: true }
     });
 

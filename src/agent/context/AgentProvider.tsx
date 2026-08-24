@@ -259,7 +259,8 @@ ${LONG_TASK_PROTOCOL_PROMPT}
             ...toolHandlersRef.current
           },
           onActivity: (_state, detail) =>
-            reportActivity('task', `任務 ${i + 1}/${tasks.length}：${detail}`)
+            reportActivity('task', `任務 ${i + 1}/${tasks.length}：${detail}`),
+          enableGoogleSearch: activeAppManifest?.enableGoogleSearch
         });
         taskResults.push({ title: tasks[i].title, result: taskResult.content });
         updatePlanTask(i, {
@@ -289,7 +290,8 @@ ${LONG_TASK_PROTOCOL_PROMPT}
         messageText: buildAggregationPrompt(objective, taskResults),
         tools: [],
         toolHandlers: {},
-        onActivity: reportActivity
+        onActivity: reportActivity,
+        enableGoogleSearch: activeAppManifest?.enableGoogleSearch
       });
 
       appendMessage({
@@ -428,7 +430,8 @@ ${LONG_TASK_PROTOCOL_PROMPT}
             };
           }
         },
-        onActivity: reportActivity
+        onActivity: reportActivity,
+        enableGoogleSearch: activeAppManifest?.enableGoogleSearch
       });
 
       if (capturedTasks) {
@@ -603,7 +606,8 @@ ${LONG_TASK_PROTOCOL_PROMPT}
             liveSessionRef.current = null;
             setLiveError(error instanceof Error ? error.message : String(error));
           }
-        }
+        },
+        enableGoogleSearch: activeAppManifest?.enableGoogleSearch
       });
       liveSessionRef.current = session;
       session.sendText('請用繁體中文、一句話告知使用者即時語音已開始，然後安靜等待使用者發問。不要自我介紹或寒暄。');

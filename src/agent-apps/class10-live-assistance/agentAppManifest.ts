@@ -54,7 +54,7 @@ export const liveAssistanceManifest: AgentAppManifest = {
     ...memoryToolDefinitions,
     ...googleToolDefinitions
   ],
-  enableGoogleSearch: true,
+  enableGoogleSearch: false,
   supportedUploads: { files: false, images: true },
   supportsRealtimeVoice: true,
   supportsScreenStream: true,
